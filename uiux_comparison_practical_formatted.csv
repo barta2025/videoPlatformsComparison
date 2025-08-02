@@ -1,0 +1,106 @@
+UI/UX Features Comparison (Practical)
+
+Category,Ser,Topic Name,Jitsi Meet,Google Meet,Zoom,Microsoft Teams,Cisco Webex,Discord,Slack,BlueJeans,RingCentral,8x8,Whereby,Loom,Rmk / Explanation of Feature
+---,---,---,---,---,---,---,---,---,---,---,---,---,---,---,---
+UI/UX Features,1,Force Mute All,✅ (Moderator option),✅ (Host control),✅ (Host or Co-host),✅ (Organizer control),✅,✅,✅,✅,✅,✅,✅,❌,Prevents disruptions in large meetings
+UI/UX Features,2,Individual Force Mute/Unmute,"✅ (Only mute, not unmute)","✅ (Only mute, not unmute)","✅ (Only mute, not unmute)","✅ (Only mute, not unmute)",✅,✅,✅,✅,✅,✅,✅,❌,"Due to privacy, unmute must be user-initiated"
+UI/UX Features,3,Force Turn Off All Camera,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Host/Moderator feature to conserve bandwidth
+UI/UX Features,4,Force Individual Turn Off Camera,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Useful in moderated meetings
+UI/UX Features,5,Admin Send Request for Video Turn On,"⚠️ (Not native, possible via UI mod)",❌,✅ (Prompt + notification),✅ (Prompt),✅ (Prompt with ring),❌,❌,✅,✅,✅,❌,❌,Alerting participants to activate camera
+UI/UX Features,6,Waiting Room / Lobby,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,For participant pre-screening
+UI/UX Features,7,Show Unverified Connected Users,✅ (via JWT/Auth plugin),✅ (via domain control),✅,✅ (Microsoft 365 verified only),✅,✅,✅,✅,✅,✅,✅,❌,Based on SSO/invite tokens
+UI/UX Features,8,Step Away / Away Button,❌,❌,✅ (Optional status),✅,✅,✅,✅,✅,✅,✅,❌,❌,"""AFK"" (away from keyboard) indicator useful for presence tracking"
+UI/UX Features,9,Raise Hand Button,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,All platforms support hand raise icon
+UI/UX Features,10,Chatbox – Mention Specific User,✅ (@username),✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Tag individual in chat for direct communication
+UI/UX Features,11,In-call Poll Creation,"✅ (Etherpad plugin, polls plugin)",✅ (Built-in),✅ (Built-in),✅,✅,✅,✅,✅,✅,✅,❌,❌,For group voting or feedback
+UI/UX Features,12,Whiteboard Sharing,✅ (via OpenBoard or plugin),"✅ (Jamboard deprecated, new Canvas)",✅ (Zoom Whiteboard),✅ (MS Whiteboard integrated),✅ (Webex Whiteboard),❌,❌,✅,✅,✅,❌,❌,Jitsi uses external tools or plugin integration
+UI/UX Features,13,Screen Sharing (Full/Desktop/Tab),✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Core feature of all platforms
+UI/UX Features,14,Remote Desktop Control,❌,❌,✅,✅ (with Teams app plugin),✅,❌,❌,✅,✅,✅,❌,❌,Useful for support/helpdesk workflows
+UI/UX Features,15,Background Blur / Virtual Background,✅ (browser support varies),✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Privacy & professionalism in visual setting
+UI/UX Features,16,Breakout Rooms,✅ (via plugin),✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,❌,Small group discussions within larger meetings
+UI/UX Features,17,Live Transcription,✅ (via plugin),✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,❌,Real-time speech-to-text for accessibility
+UI/UX Features,18,Closed Captions,✅ (via plugin),✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,❌,Accessibility feature for hearing impaired
+UI/UX Features,19,Meeting Recording,✅ (JaaS),✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Local or cloud recording options
+UI/UX Features,20,File Sharing,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Share documents during meetings
+UI/UX Features,21,Meeting Notes,✅ (via Etherpad plugin),✅ (Google Docs integration),✅,✅ (OneNote integration),✅,✅,✅,✅,✅,✅,❌,❌,Collaborative note-taking during meetings
+UI/UX Features,22,Calendar Integration,✅,✅ (Google Calendar),✅,✅ (Outlook integration),✅,✅,✅,✅,✅,✅,✅,❌,Schedule meetings from calendar apps
+UI/UX Features,23,Meeting Templates,❌,✅,✅,✅,✅,❌,❌,✅,✅,✅,❌,❌,Pre-configured meeting settings
+UI/UX Features,24,Custom Meeting URLs,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Personalized meeting links
+UI/UX Features,25,Meeting Password Protection,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Security feature for meeting access
+UI/UX Features,26,Waiting Room Customization,❌,✅,✅,✅,✅,❌,❌,✅,✅,✅,❌,❌,Branded waiting room experience
+UI/UX Features,27,Meeting Analytics,✅ (JaaS),✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,❌,Usage statistics and insights
+UI/UX Features,28,Meeting Scheduling,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Schedule meetings in advance
+UI/UX Features,29,Recurring Meetings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Set up regular meeting series
+UI/UX Features,30,Meeting Reminders,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Automated meeting notifications
+UI/UX Features,31,Meeting Join by Phone,✅,✅,✅,✅,✅,❌,❌,✅,✅,✅,❌,❌,Audio-only participation option
+UI/UX Features,32,Meeting Join by H.323/SIP,❌,❌,✅,✅,✅,❌,❌,✅,✅,✅,❌,❌,Enterprise room system integration
+UI/UX Features,33,Meeting Join by WebRTC,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Browser-based participation
+UI/UX Features,34,Meeting Join by Mobile App,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Native mobile app participation
+UI/UX Features,35,Meeting Join by Desktop App,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Native desktop app participation
+UI/UX Features,36,Meeting Join by Email Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,One-click meeting access
+UI/UX Features,37,Meeting Join by QR Code,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Mobile-friendly meeting access
+UI/UX Features,38,Meeting Join by Calendar Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Direct calendar integration
+UI/UX Features,39,Meeting Join by Browser Extension,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Browser-based meeting access
+UI/UX Features,40,Meeting Join by Slack Integration,❌,❌,✅,❌,❌,✅,✅,✅,✅,✅,❌,❌,Team collaboration integration
+UI/UX Features,41,Meeting Join by Microsoft Teams,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Enterprise collaboration integration
+UI/UX Features,42,Meeting Join by Google Workspace,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Google ecosystem integration
+UI/UX Features,43,Meeting Join by Salesforce,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,CRM integration for sales teams
+UI/UX Features,44,Meeting Join by HubSpot,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Marketing automation integration
+UI/UX Features,45,Meeting Join by Zapier,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Workflow automation integration
+UI/UX Features,46,Meeting Join by IFTTT,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,IoT and automation integration
+UI/UX Features,47,Meeting Join by Webhook,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Custom integration support
+UI/UX Features,48,Meeting Join by API,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Programmatic meeting creation
+UI/UX Features,49,Meeting Join by SDK,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Native app integration
+UI/UX Features,50,Meeting Join by Widget,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Website embedding
+UI/UX Features,51,Meeting Join by iFrame,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Web page integration
+UI/UX Features,52,Meeting Join by Mobile Deep Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Mobile app deep linking
+UI/UX Features,53,Meeting Join by Desktop Deep Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Desktop app deep linking
+UI/UX Features,54,Meeting Join by Browser Deep Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Browser-based deep linking
+UI/UX Features,55,Meeting Join by SMS,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,❌,❌,Text message meeting access
+UI/UX Features,56,Meeting Join by Email,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Email-based meeting access
+UI/UX Features,57,Meeting Join by Push Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Mobile push notification access
+UI/UX Features,58,Meeting Join by In-App Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,App-based notification access
+UI/UX Features,59,Meeting Join by Browser Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Web-based notification access
+UI/UX Features,60,Meeting Join by Desktop Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Desktop-based notification access
+UI/UX Features,61,Meeting Join by System Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,OS-level notification access
+UI/UX Features,62,Voice Commands,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Voice-activated meeting controls
+UI/UX Features,63,Gesture Controls,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Gesture-based meeting controls
+UI/UX Features,64,Eye Tracking,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Eye-tracking for meeting controls
+UI/UX Features,65,AI Meeting Assistant,❌,✅ (Google Duet),✅ (Zoom IQ),✅ (Copilot),✅ (Webex Assistant),❌,❌,❌,❌,❌,❌,❌,AI-powered meeting assistance
+UI/UX Features,66,Smart Meeting Summaries,❌,✅,✅,✅,✅,❌,❌,❌,❌,❌,❌,❌,AI-generated meeting summaries
+UI/UX Features,67,Action Item Detection,❌,✅,✅,✅,✅,❌,❌,❌,❌,❌,❌,❌,AI-detected action items from meetings
+UI/UX Features,68,Meeting Sentiment Analysis,❌,❌,✅,❌,❌,❌,❌,❌,❌,❌,❌,❌,AI analysis of meeting participant sentiment
+UI/UX Features,69,Automatic Meeting Scheduling,❌,✅,✅,✅,✅,❌,❌,❌,❌,❌,❌,❌,AI-powered meeting scheduling
+UI/UX Features,70,Smart Meeting Recommendations,❌,✅,✅,✅,✅,❌,❌,❌,❌,❌,❌,❌,AI-recommended meeting times and participants
+UI/UX Features,71,Meeting Quality Analytics,❌,✅,✅,✅,✅,❌,❌,✅,✅,✅,❌,❌,Analytics on meeting quality and engagement
+UI/UX Features,72,Network Quality Monitoring,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Real-time network quality indicators
+UI/UX Features,73,Bandwidth Optimization,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Automatic bandwidth optimization
+UI/UX Features,74,Audio Level Indicators,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Visual indicators for audio levels
+UI/UX Features,75,Video Quality Indicators,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Visual indicators for video quality
+UI/UX Features,76,Connection Status Indicators,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Real-time connection status display
+UI/UX Features,77,Meeting Duration Timer,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Meeting duration tracking
+UI/UX Features,78,Participant Count Display,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Real-time participant count
+UI/UX Features,79,Meeting ID Display,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Meeting identifier display
+UI/UX Features,80,Host Controls Panel,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Host-specific control panel
+UI/UX Features,81,Participant List,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,List of meeting participants
+UI/UX Features,82,Chat History,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Persistent chat history
+UI/UX Features,83,Meeting Settings Panel,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Meeting configuration options
+UI/UX Features,84,Audio/Video Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Audio and video configuration
+UI/UX Features,85,Screen Share Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Screen sharing configuration
+UI/UX Features,86,Recording Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Recording configuration options
+UI/UX Features,87,Meeting Invite Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Meeting invitation configuration
+UI/UX Features,88,Security Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Meeting security configuration
+UI/UX Features,89,Accessibility Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Accessibility configuration options
+UI/UX Features,90,Language Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Multi-language support
+UI/UX Features,91,Theme Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,UI theme customization
+UI/UX Features,92,Notification Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Notification configuration
+UI/UX Features,93,Privacy Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Privacy configuration options
+UI/UX Features,94,Data Usage Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Data usage configuration
+UI/UX Features,95,Performance Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Performance optimization settings
+UI/UX Features,96,Network Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Network configuration options
+UI/UX Features,97,Device Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Device configuration options
+UI/UX Features,98,Account Settings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Account configuration options
+UI/UX Features,99,Help & Support,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,Help and support resources
+UI/UX Features,100,Feedback System,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,❌,User feedback collection system
+
+Summary,Total Features,100,,,,,,,,,,,,,,

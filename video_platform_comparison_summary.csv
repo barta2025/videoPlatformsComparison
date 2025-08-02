@@ -1,0 +1,41 @@
+Video Platform Comparison Summary
+""
+Overview
+Feature Category,Count,Description
+---,---,---
+Technical Settings,20,"Backend languages, codecs, encryption, etc."
+UI/UX Features,100,User interface and experience features
+Platforms Compared,15,Major video calling platforms
+Additional Platforms,40+,Emerging and specialized platforms
+""
+Platforms Included
+Platform,Type,Key Features
+---,---,---
+Jitsi Meet,Open Source,"Self-hosted, WebRTC, Free"
+Google Meet,Enterprise,Google Workspace integration
+Zoom,Commercial,"Wide adoption, extensive features"
+Microsoft Teams,Enterprise,Microsoft 365 integration
+Cisco Webex,Enterprise,Cisco ecosystem integration
+Discord,Community,Gaming and community focus
+Slack,Business,Team collaboration focus
+BlueJeans,Enterprise,Verizon enterprise platform
+RingCentral,Business,Unified communications
+8x8,Business,Cloud communications
+Whereby,Simple,"Browser-based, easy to use"
+Loom,Recording,Video messaging and screen recording
+""
+Generated Files
+File Type,Filename,Description
+---,---,---
+CSV,video_platform_comparison_table_1.csv,Technical Settings Comparison
+CSV,video_platform_comparison_table_2.csv,UI/UX Features Comparison
+CSV,video_platform_comparison_practical_table_1.csv,Technical Settings (Practical)
+CSV,video_platform_comparison_practical_table_2.csv,UI/UX Features (Practical)
+HTML,technical_comparison.html,Technical Settings (Printable)
+HTML,uiux_comparison.html,UI/UX Features (Printable)
+HTML,technical_comparison_practical.html,"Technical Settings (Practical, Printable)"
+HTML,uiux_comparison_practical.html,"UI/UX Features (Practical, Printable)"
+JSON,video_platform_comparison_table_1.json,Technical Settings (JSON format)
+JSON,video_platform_comparison_table_2.json,UI/UX Features (JSON format)
+JSON,video_platform_comparison_practical_table_1.json,"Technical Settings (Practical, JSON)"
+JSON,video_platform_comparison_practical_table_2.json,"UI/UX Features (Practical, JSON)"

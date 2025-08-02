@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Settings Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 8px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .feature-name {
+            text-align: left;
+            font-weight: bold;
+        }
+        .platform {
+            font-weight: bold;
+            background-color: #e6f3ff;
+        }
+        @media print {
+            body {
+                font-size: 8px;
+            }
+            table {
+                font-size: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Technical Settings Comparison</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Ser</th>
+                <th>Topic Name</th>
+                <th>Jitsi Meet</th>
+                <th>Google Meet</th>
+                <th>Zoom</th>
+                <th>Microsoft Teams</th>
+                <th>Cisco Webex</th>
+                <th>Discord</th>
+                <th>Slack</th>
+                <th>BlueJeans</th>
+                <th>RingCentral</th>
+                <th>8x8</th>
+                <th>Rmk / Explanation of Feature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>1</td>
+                <td class="platform">Backend Language</td>
+                <td class="platform">Java (and Kotlin, Go for services)</td>
+                <td class="platform">Likely **Go/C++/Java** (Google uses Go & C++ backend services) ([Ishir][1])</td>
+                <td class="platform">Likely **Node.js, Python, Ruby** for server-side services ([Maxaix][2], [Back4App Blog][3])</td>
+                <td class="platform">C# / .NET + Azure backend (Microsoft stack)</td>
+                <td class="platform">Cisco proprietary stack (likely C++/Java)</td>
+                <td class="platform">Elixir/Erlang</td>
+                <td class="platform">Node.js/TypeScript</td>
+                <td class="platform">Node.js/Java</td>
+                <td class="platform">Node.js/Java</td>
+                <td class="platform">Node.js/Java</td>
+                <td class="platform">Common enterprise languages; inferred from broader infrastructure statements</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>2</td>
+                <td class="platform">Frontend Language</td>
+                <td class="platform">React.js / React Native</td>
+                <td class="platform">Web Components + JS/Polymer inside Chrome-based browsers</td>
+                <td class="platform">HTML5/CSS/JavaScript with React/Vue/Angular frameworks ([Back4App Blog][3], [Maxaix][2])</td>
+                <td class="platform">Electron + TypeScript/JavaScript Web</td>
+                <td class="platform">Web client built on WebRTC + JS, backend Angular/React</td>
+                <td class="platform">Electron/React</td>
+                <td class="platform">Electron/React</td>
+                <td class="platform">React/Electron</td>
+                <td class="platform">React/Electron</td>
+                <td class="platform">React/Electron</td>
+                <td class="platform">Modern web UI frameworks across platforms</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>3</td>
+                <td class="platform">Bandwidth Adaptability</td>
+                <td class="platform">Adaptive WebRTC bitrate control</td>
+                <td class="platform">Adaptive QUIC + WebRTC congestion control, Lyra codec for ultra low bandwidth ([Wikipedia][4])</td>
+                <td class="platform">Dynamic bitrate (~2.6 Mbps for group HD) with adaptive fallback</td>
+                <td class="platform">Adaptive (~1–2 Mbps per stream) WebRTC based</td>
+                <td class="platform">Adaptive Cisco algorithms (RE)</td>
+                <td class="platform">Adaptive WebRTC</td>
+                <td class="platform">Adaptive WebRTC</td>
+                <td class="platform">Adaptive WebRTC</td>
+                <td class="platform">Adaptive WebRTC</td>
+                <td class="platform">Adaptive WebRTC</td>
+                <td class="platform">All support dynamic bitrate auto-adjustment based on network quality</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>4</td>
+                <td class="platform">Video Resolution</td>
+                <td class="platform">Up to 720p (1080p with custom settings/self-host)</td>
+                <td class="platform">Up to 1080p HD on premium; auto‑adaptive ([Wikipedia][4], [medium.com][5])</td>
+                <td class="platform">Up to 720p default; 1080p with Business/Enterprise plans</td>
+                <td class="platform">Up to 1080p, auto-adjust based on client CPU</td>
+                <td class="platform">720p / 1080p depending on plan</td>
+                <td class="platform">720p/1080p</td>
+                <td class="platform">720p</td>
+                <td class="platform">720p/1080p</td>
+                <td class="platform">720p/1080p</td>
+                <td class="platform">720p/1080p</td>
+                <td class="platform">Resolution depends on plan and endpoint capability</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>5</td>
+                <td class="platform">Codec</td>
+                <td class="platform">VP8 video; Opus audio</td>
+                <td class="platform">VP8, VP9, H.264; Opus; Lyra for voice fallback in low bandwidth ([Wikipedia][4])</td>
+                <td class="platform">H.264, VP8, Opus audio</td>
+                <td class="platform">SILK, G.722, H.264 audio via Teams infrastructure</td>
+                <td class="platform">H.264, Opus codecs used across media</td>
+                <td class="platform">Opus/H.264</td>
+                <td class="platform">Opus/H.264</td>
+                <td class="platform">H.264/Opus</td>
+                <td class="platform">H.264/Opus</td>
+                <td class="platform">H.264/Opus</td>
+                <td class="platform">Standard WebRTC codec support; advanced voice codecs for low bandwidth</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>6</td>
+                <td class="platform">Encryption Used</td>
+                <td class="platform">DTLS‑SRTP (AES‑256); optional browser‑based E2EE</td>
+                <td class="platform">DTLS‑SRTP and TLS (1.2/1.3); limited E2EE for Workspace Enterprise ([Wikipedia][4])</td>
+                <td class="platform">TLS 1.2+ for signaling; AES‑256 GCM for media; optional E2EE (with reduced features) ([Back4App Blog][3], [developers.zoom.us][6])</td>
+                <td class="platform">Mutual TLS signaling; AES‑256 GCM over SRTP for media</td>
+                <td class="platform">TLS + SRTP (AES‑128/256); E2EE available in hybrid mode</td>
+                <td class="platform">TLS + SRTP</td>
+                <td class="platform">TLS + SRTP</td>
+                <td class="platform">TLS + SRTP</td>
+                <td class="platform">TLS + SRTP</td>
+                <td class="platform">TLS + SRTP</td>
+                <td class="platform">End‑to‑end media encryption varies by platform and tier</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>7</td>
+                <td class="platform">External API Calls</td>
+                <td class="platform">REST / JS API (self-host or JaaS)</td>
+                <td class="platform">Google Meet REST API & Workspace integration endpoints ([Google for Developers][7])</td>
+                <td class="platform">Zoom REST APIs, SDKs, JSON Web Tokens (JWT auth) ([developers.zoom.us][6])</td>
+                <td class="platform">Microsoft Graph API (Teams), Bot Framework</td>
+                <td class="platform">Webex APIs + Control Hub API ([cisco.com][8])</td>
+                <td class="platform">REST API</td>
+                <td class="platform">REST API</td>
+                <td class="platform">REST API</td>
+                <td class="platform">REST API</td>
+                <td class="platform">REST API</td>
+                <td class="platform">Extensible integrations via public APIs across services</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>8</td>
+                <td class="platform">STUN Server Location</td>
+                <td class="platform">Configurable (Prosody‑configured STUN/TURN servers)</td>
+                <td class="platform">Google‑managed STUN/TURN services; uses QUIC/UDP routing</td>
+                <td class="platform">Zoom's global TURN relays via AWS edges</td>
+                <td class="platform">Azure relays and Microsoft-managed TURN/STUN</td>
+                <td class="platform">Cisco TURN/STUN infrastructure for global mediation</td>
+                <td class="platform">Discord managed</td>
+                <td class="platform">Slack managed</td>
+                <td class="platform">BlueJeans managed</td>
+                <td class="platform">RingCentral managed</td>
+                <td class="platform">8x8 managed</td>
+                <td class="platform">All platforms use STUN/TURN; self‑hosting gives control in Jitsi only</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>9</td>
+                <td class="platform">Mobile SDK Support</td>
+                <td class="platform">React Native SDK</td>
+                <td class="platform">Android/iOS SDKs</td>
+                <td class="platform">iOS/Android SDKs</td>
+                <td class="platform">Mobile SDKs for iOS/Android</td>
+                <td class="platform">iOS/Android SDKs</td>
+                <td class="platform">Mobile SDKs</td>
+                <td class="platform">Mobile SDKs</td>
+                <td class="platform">Mobile SDKs</td>
+                <td class="platform">Mobile SDKs</td>
+                <td class="platform">Mobile SDKs</td>
+                <td class="platform">Native mobile app development support</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>10</td>
+                <td class="platform">WebRTC Implementation</td>
+                <td class="platform">Full WebRTC stack</td>
+                <td class="platform">WebRTC + QUIC</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">WebRTC based</td>
+                <td class="platform">Standard for real-time communication</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>11</td>
+                <td class="platform">Cloud Infrastructure</td>
+                <td class="platform">Self-hosted or JaaS (AWS/GCP)</td>
+                <td class="platform">Google Cloud Platform</td>
+                <td class="platform">AWS + Google Cloud</td>
+                <td class="platform">Microsoft Azure</td>
+                <td class="platform">Cisco Cloud</td>
+                <td class="platform">AWS</td>
+                <td class="platform">AWS</td>
+                <td class="platform">AWS</td>
+                <td class="platform">AWS</td>
+                <td class="platform">AWS</td>
+                <td class="platform">Cloud provider choices affect performance and compliance</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>12</td>
+                <td class="platform">Recording Capability</td>
+                <td class="platform">Server-side recording (JaaS)</td>
+                <td class="platform">Cloud recording (Google Drive)</td>
+                <td class="platform">Local/Cloud recording</td>
+                <td class="platform">Stream/Cloud recording</td>
+                <td class="platform">Cloud recording</td>
+                <td class="platform">Local recording</td>
+                <td class="platform">Local recording</td>
+                <td class="platform">Cloud recording</td>
+                <td class="platform">Cloud recording</td>
+                <td class="platform">Cloud recording</td>
+                <td class="platform">Recording options vary by plan and compliance needs</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>13</td>
+                <td class="platform">Analytics & Monitoring</td>
+                <td class="platform">Basic metrics (JaaS)</td>
+                <td class="platform">Google Analytics integration</td>
+                <td class="platform">Meeting analytics dashboard</td>
+                <td class="platform">Microsoft 365 analytics</td>
+                <td class="platform">Control Hub analytics</td>
+                <td class="platform">Basic metrics</td>
+                <td class="platform">Basic metrics</td>
+                <td class="platform">Advanced analytics</td>
+                <td class="platform">Advanced analytics</td>
+                <td class="platform">Advanced analytics</td>
+                <td class="platform">Enterprise-grade monitoring capabilities</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>14</td>
+                <td class="platform">SSO Integration</td>
+                <td class="platform">SAML/OAuth2 (JaaS)</td>
+                <td class="platform">Google Workspace SSO</td>
+                <td class="platform">SAML/OAuth2</td>
+                <td class="platform">Azure AD integration</td>
+                <td class="platform">SAML/OAuth2</td>
+                <td class="platform">OAuth2</td>
+                <td class="platform">OAuth2</td>
+                <td class="platform">SAML/OAuth2</td>
+                <td class="platform">SAML/OAuth2</td>
+                <td class="platform">SAML/OAuth2</td>
+                <td class="platform">Enterprise authentication standards</td>
+            </tr>
+            <tr>
+                <td class="feature-name">Technical Setting</td>
+                <td>15</td>
+                <td class="platform">Compliance Standards</td>
+                <td class="platform">GDPR, HIPAA (JaaS)</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">GDPR</td>
+                <td class="platform">GDPR</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">SOC 2, GDPR, HIPAA</td>
+                <td class="platform">Industry compliance certifications</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

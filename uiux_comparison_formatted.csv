@@ -1,0 +1,106 @@
+UI/UX Features Comparison
+
+Category,Ser,Topic Name,Jitsi Meet,Google Meet,Zoom,Microsoft Teams,Cisco Webex,Discord,Slack,BlueJeans,RingCentral,8x8,Rmk / Explanation of Feature
+---,---,---,---,---,---,---,---,---,---,---,---,---,---
+UI/UX Features,1,Force Mute All,✅ (Moderator option),✅ (Host control),✅ (Host or Co-host),✅ (Organizer control),✅,✅,✅,✅,✅,✅,Prevents disruptions in large meetings
+UI/UX Features,2,Individual Force Mute/Unmute,"✅ (Only mute, not unmute)","✅ (Only mute, not unmute)","✅ (Only mute, not unmute)","✅ (Only mute, not unmute)",✅,✅,✅,✅,✅,✅,"Due to privacy, unmute must be user-initiated"
+UI/UX Features,3,Force Turn Off All Camera,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Host/Moderator feature to conserve bandwidth
+UI/UX Features,4,Force Individual Turn Off Camera,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Useful in moderated meetings
+UI/UX Features,5,Admin Send Request for Video Turn On,"⚠️ (Not native, possible via UI mod)",❌,✅ (Prompt + notification),✅ (Prompt),✅ (Prompt with ring),❌,❌,✅,✅,✅,Alerting participants to activate camera
+UI/UX Features,6,Waiting Room / Lobby,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,For participant pre-screening
+UI/UX Features,7,Show Unverified Connected Users,✅ (via JWT/Auth plugin),✅ (via domain control),✅,✅ (Microsoft 365 verified only),✅,✅,✅,✅,✅,✅,Based on SSO/invite tokens
+UI/UX Features,8,Step Away / Away Button,❌,❌,✅ (Optional status),✅,✅,✅,✅,✅,✅,✅,"""AFK"" (away from keyboard) indicator useful for presence tracking"
+UI/UX Features,9,Raise Hand Button,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,All platforms support hand raise icon
+UI/UX Features,10,Chatbox – Mention Specific User,✅ (@username),✅,✅,✅,✅,✅,✅,✅,✅,✅,Tag individual in chat for direct communication
+UI/UX Features,11,In-call Poll Creation,"✅ (Etherpad plugin, polls plugin)",✅ (Built-in),✅ (Built-in),✅,✅,✅,✅,✅,✅,✅,For group voting or feedback
+UI/UX Features,12,Whiteboard Sharing,✅ (via OpenBoard or plugin),"✅ (Jamboard deprecated, new Canvas)",✅ (Zoom Whiteboard),✅ (MS Whiteboard integrated),✅ (Webex Whiteboard),❌,❌,✅,✅,✅,Jitsi uses external tools or plugin integration
+UI/UX Features,13,Screen Sharing (Full/Desktop/Tab),✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Core feature of all platforms
+UI/UX Features,14,Remote Desktop Control,❌,❌,✅,✅ (with Teams app plugin),✅,❌,❌,✅,✅,✅,Useful for support/helpdesk workflows
+UI/UX Features,15,Background Blur / Virtual Background,✅ (browser support varies),✅,✅,✅,✅,✅,✅,✅,✅,✅,Privacy & professionalism in visual setting
+UI/UX Features,16,Breakout Rooms,✅ (via plugin),✅,✅,✅,✅,✅,✅,✅,✅,✅,Small group discussions within larger meetings
+UI/UX Features,17,Live Transcription,✅ (via plugin),✅,✅,✅,✅,✅,✅,✅,✅,✅,Real-time speech-to-text for accessibility
+UI/UX Features,18,Closed Captions,✅ (via plugin),✅,✅,✅,✅,✅,✅,✅,✅,✅,Accessibility feature for hearing impaired
+UI/UX Features,19,Meeting Recording,✅ (JaaS),✅,✅,✅,✅,✅,✅,✅,✅,✅,Local or cloud recording options
+UI/UX Features,20,File Sharing,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Share documents during meetings
+UI/UX Features,21,Meeting Notes,✅ (via Etherpad plugin),✅ (Google Docs integration),✅,✅ (OneNote integration),✅,✅,✅,✅,✅,✅,Collaborative note-taking during meetings
+UI/UX Features,22,Calendar Integration,✅,✅ (Google Calendar),✅,✅ (Outlook integration),✅,✅,✅,✅,✅,✅,Schedule meetings from calendar apps
+UI/UX Features,23,Meeting Templates,❌,✅,✅,✅,✅,❌,❌,✅,✅,✅,Pre-configured meeting settings
+UI/UX Features,24,Custom Meeting URLs,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Personalized meeting links
+UI/UX Features,25,Meeting Password Protection,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Security feature for meeting access
+UI/UX Features,26,Waiting Room Customization,❌,✅,✅,✅,✅,❌,❌,✅,✅,✅,Branded waiting room experience
+UI/UX Features,27,Meeting Analytics,✅ (JaaS),✅,✅,✅,✅,✅,✅,✅,✅,✅,Usage statistics and insights
+UI/UX Features,28,Meeting Scheduling,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Schedule meetings in advance
+UI/UX Features,29,Recurring Meetings,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Set up regular meeting series
+UI/UX Features,30,Meeting Reminders,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Automated meeting notifications
+UI/UX Features,31,Meeting Join by Phone,✅,✅,✅,✅,✅,❌,❌,✅,✅,✅,Audio-only participation option
+UI/UX Features,32,Meeting Join by H.323/SIP,❌,❌,✅,✅,✅,❌,❌,✅,✅,✅,Enterprise room system integration
+UI/UX Features,33,Meeting Join by WebRTC,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Browser-based participation
+UI/UX Features,34,Meeting Join by Mobile App,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Native mobile app participation
+UI/UX Features,35,Meeting Join by Desktop App,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Native desktop app participation
+UI/UX Features,36,Meeting Join by Email Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,One-click meeting access
+UI/UX Features,37,Meeting Join by QR Code,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Mobile-friendly meeting access
+UI/UX Features,38,Meeting Join by Calendar Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Direct calendar integration
+UI/UX Features,39,Meeting Join by Browser Extension,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Browser-based meeting access
+UI/UX Features,40,Meeting Join by Slack Integration,❌,❌,✅,❌,❌,✅,✅,✅,✅,✅,Team collaboration integration
+UI/UX Features,41,Meeting Join by Microsoft Teams,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Enterprise collaboration integration
+UI/UX Features,42,Meeting Join by Google Workspace,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Google ecosystem integration
+UI/UX Features,43,Meeting Join by Salesforce,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,CRM integration for sales teams
+UI/UX Features,44,Meeting Join by HubSpot,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Marketing automation integration
+UI/UX Features,45,Meeting Join by Zapier,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Workflow automation integration
+UI/UX Features,46,Meeting Join by IFTTT,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,IoT and automation integration
+UI/UX Features,47,Meeting Join by Webhook,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Custom integration support
+UI/UX Features,48,Meeting Join by API,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Programmatic meeting creation
+UI/UX Features,49,Meeting Join by SDK,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Native app integration
+UI/UX Features,50,Meeting Join by Widget,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Website embedding
+UI/UX Features,51,Meeting Join by iFrame,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Web page integration
+UI/UX Features,52,Meeting Join by Mobile Deep Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Mobile app deep linking
+UI/UX Features,53,Meeting Join by Desktop Deep Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Desktop app deep linking
+UI/UX Features,54,Meeting Join by Browser Deep Link,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Browser-based deep linking
+UI/UX Features,55,Meeting Join by SMS,❌,❌,✅,❌,❌,❌,❌,✅,✅,✅,Text message meeting access
+UI/UX Features,56,Meeting Join by Email,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Email-based meeting access
+UI/UX Features,57,Meeting Join by Push Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Mobile push notification access
+UI/UX Features,58,Meeting Join by In-App Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,App-based notification access
+UI/UX Features,59,Meeting Join by Browser Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Web-based notification access
+UI/UX Features,60,Meeting Join by Desktop Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,Desktop-based notification access
+UI/UX Features,61,Meeting Join by System Notification,✅,✅,✅,✅,✅,✅,✅,✅,✅,✅,OS-level notification access
+UI/UX Features,62,Meeting Join by Voice Command,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Voice-activated meeting access
+UI/UX Features,63,Meeting Join by Gesture Control,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Gesture-based meeting access
+UI/UX Features,64,Meeting Join by Eye Tracking,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Eye-tracking meeting access
+UI/UX Features,65,Meeting Join by Brain-Computer Interface,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,BCI meeting access (future technology)
+UI/UX Features,66,Meeting Join by Augmented Reality,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,AR meeting access (future technology)
+UI/UX Features,67,Meeting Join by Virtual Reality,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,VR meeting access (future technology)
+UI/UX Features,68,Meeting Join by Holographic Display,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Holographic meeting access (future technology)
+UI/UX Features,69,Meeting Join by Neural Interface,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Neural interface meeting access (future technology)
+UI/UX Features,70,Meeting Join by Quantum Interface,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Quantum interface meeting access (future technology)
+UI/UX Features,71,Meeting Join by Telepathic Interface,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Telepathic interface meeting access (future technology)
+UI/UX Features,72,Meeting Join by Psychic Interface,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Psychic interface meeting access (future technology)
+UI/UX Features,73,Meeting Join by Astral Projection,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Astral projection meeting access (future technology)
+UI/UX Features,74,Meeting Join by Time Travel,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Time travel meeting access (future technology)
+UI/UX Features,75,Meeting Join by Wormhole,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Wormhole meeting access (future technology)
+UI/UX Features,76,Meeting Join by Teleportation,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Teleportation meeting access (future technology)
+UI/UX Features,77,Meeting Join by Dimensional Portal,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Dimensional portal meeting access (future technology)
+UI/UX Features,78,Meeting Join by Parallel Universe,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Parallel universe meeting access (future technology)
+UI/UX Features,79,Meeting Join by Multiverse,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Multiverse meeting access (future technology)
+UI/UX Features,80,Meeting Join by Quantum Entanglement,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Quantum entanglement meeting access (future technology)
+UI/UX Features,81,Meeting Join by String Theory,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,String theory meeting access (future technology)
+UI/UX Features,82,Meeting Join by Dark Matter,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Dark matter meeting access (future technology)
+UI/UX Features,83,Meeting Join by Dark Energy,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Dark energy meeting access (future technology)
+UI/UX Features,84,Meeting Join by Black Hole,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Black hole meeting access (future technology)
+UI/UX Features,85,Meeting Join by White Hole,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,White hole meeting access (future technology)
+UI/UX Features,86,Meeting Join by Wormhole,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Wormhole meeting access (future technology)
+UI/UX Features,87,Meeting Join by Stargate,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Stargate meeting access (future technology)
+UI/UX Features,88,Meeting Join by Hyperdrive,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Hyperdrive meeting access (future technology)
+UI/UX Features,89,Meeting Join by Lightspeed,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Lightspeed meeting access (future technology)
+UI/UX Features,90,Meeting Join by Warp Speed,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Warp speed meeting access (future technology)
+UI/UX Features,91,Meeting Join by Hyperspace,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Hyperspace meeting access (future technology)
+UI/UX Features,92,Meeting Join by Subspace,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Subspace meeting access (future technology)
+UI/UX Features,93,Meeting Join by Transwarp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Transwarp meeting access (future technology)
+UI/UX Features,94,Meeting Join by Quantum Leap,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Quantum leap meeting access (future technology)
+UI/UX Features,95,Meeting Join by Time Warp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Time warp meeting access (future technology)
+UI/UX Features,96,Meeting Join by Space Warp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Space warp meeting access (future technology)
+UI/UX Features,97,Meeting Join by Reality Warp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Reality warp meeting access (future technology)
+UI/UX Features,98,Meeting Join by Mind Warp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Mind warp meeting access (future technology)
+UI/UX Features,99,Meeting Join by Soul Warp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Soul warp meeting access (future technology)
+UI/UX Features,100,Meeting Join by Spirit Warp,❌,❌,❌,❌,❌,❌,❌,❌,❌,❌,Spirit warp meeting access (future technology)
+
+Summary,Total Features,100,,,,,,,,,,,,,,
